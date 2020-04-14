@@ -38,12 +38,12 @@ class MaximumUniqueNumbers {
 //        there are n*(n+1)/2 non-empty subarrays.
         int[] arr = {3,2,3,2,3,2}; //Output 2
         int[] arr1 = {7,7,7,7,7,5}; //Output 1
-        int intergersN = 6;
+        int intNumbers = 6;
 
-        int subArraySizeM = 5;
+        int subArraySizeM = 3;
 
-        System.out.println("Output: "+maxUniqueNum(arr, intergersN, subArraySizeM));
+        System.out.println("Output: "+maxUniqueNum(arr, intNumbers, subArraySizeM));
         System.out.println();
-        System.out.println("Output: "+maxUniqueNum(arr1, intergersN, subArraySizeM));
+        System.out.println("Output: "+maxUniqueNum(arr1, intNumbers, subArraySizeM));
     }
 }
