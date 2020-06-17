@@ -6,8 +6,7 @@ class MaximumUniqueNumbers {
     // Function to find maximum number of
     // Unique integers in Sub-Array
     // of given size
-    public static int maxUniqueNum(int arr[],int N, int M)
-    {
+    public static int maxUniqueNum(int arr[],int N, int M){
         int maxUnique = 0;
         // Generate all subarrays of size M
         for (int i = 0; i < N - M; i++) {
@@ -23,22 +22,19 @@ class MaximumUniqueNumbers {
                 if (!map.containsKey(arr[k])) {
                     map.put(arr[i],1);
                     currentUnique++;
-                    continue;
                 }
             }
-
             if (currentUnique > maxUnique)
                 maxUnique = currentUnique;
         }
         return maxUnique;
     }
 
-    public static void main(String[] args)
-    {
-//        there are n*(n+1)/2 non-empty subarrays.
-        int[] arr = {3,2,3,2,3,2}; //Output 2
-        int[] arr1 = {7,7,7,7,7,5}; //Output 1
-        int intNumbers = 6;
+    public static void main(String[] args) {
+        //there are n*(n+1)/2 non-empty subArrays.
+        int[] arr = {2,2,2,2,2,2,2,2}; //Output 1
+        int[] arr1 = {7, 5, 5, 7, 5, 5, 7, 5, 5, 6}; //Output 2
+        int intNumbers = 9;
 
         int subArraySizeM = 3;
 
